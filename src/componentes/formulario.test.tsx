@@ -1,5 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import Formulario from "./Formulario";
 
 //Jest 
 
@@ -16,8 +17,8 @@ test('Quando o input estiver vazio, novos participantes não podem ser adiciona
     //esperar q o input esteja no documento
     expect(input).toBeInTheDocument()
 
-    //esperar q o botão esteja no documento
-    expect(botao).toBeInTheDocument()
-}
+    //esperar q o botão esteja desabilitado
+    expect(botao).toBeDisabled()
+} 
 
 )
